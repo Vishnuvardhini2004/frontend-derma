@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI - Dermatology</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+
+        <div class="menu">
+            <ul id="navbar">
+                <li><a class="active" href="Home.html">HOME</a></li>
+                <li><button><a href="Login.html">Login</a></button></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <h1>AI-dermatology</h1>
+        <p>Upload an image of your skin to detect potential skin diseases.</p>
+
+        <!-- header -->
+
+        <!-- Image upload form -->
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*" aria-label="file">
+            <button onclick="uploadImage()">Submit</button>
+        </div>
+
+        <!-- Image preview section -->
+        <div id="imagePreview" class="image-preview">
+            <img id="preview" src=" " alt="Image Preview" style="display: none;">
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultSection" class="result-section">
+            <h3>Prediction Results</h3>
+            <p id="diseaseName">Loading...</p>
+            <p id="confidenceLevel">Confidence: 0%</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</body>
+
+</html>
